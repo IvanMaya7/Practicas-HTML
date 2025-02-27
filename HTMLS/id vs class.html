@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+#MyHeader{
+    background-color: lightblue;
+    color: black;
+    padding: 40px;
+    text-align: center;
+}
+.city{
+    background-color: tomato;
+    color: white;
+    text-align: center;
+}
+</style>
+</head>
+<body>
+    <h1>Diferencia entre clase e identificación.</h1>
+    <h2 id="MyHeader">My Cities</h2>
+    <h3 class="city">Londres</h3>
+    <p>Londres es la capital de Inglaterra.</p>
+    <h3 class="city">Paris</h3>
+    <p>Paris es la capital de Francia.</p>
+
+    <h3 class="city">Tokyo</h3>
+    <p>Tokyo es la capital de Japon.</p> 
+
+    <h4 id="C4">Chapter 4</h4>
+    <a href="#C4">Saltar el capitulo 4</a><br>
+
+    <h1 id="myHeader">Hola Mundo!</h1>
+    <button onclick="displayResult()">Cambiar Texto</button>
+    <script>
+        function displayResult(){
+            document.getElementById("MyHeader").innerHTML = "Ten un bointo dia!";
+        }
+    </script>
+</body>
+</html>
